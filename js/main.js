@@ -1,8 +1,46 @@
 
+// Manipulando elementos da página
+function clicou(){
+  //alert("Obrigado por clicar...");
+  document.getElementById("agradecimento").innerHTML="<b>Obrigado por clicar...</b>";
+};
+
+function ir(){
+   window.open("http://www.terra.com.br");
+   //window.location.href = "http://www.abola.pt";
+};
+    
+function trocar(){
+    document.getElementById("onmouse").innerHTML="<b>Você passou o mouse em cima...</b>";
+};
+function voltar(elemento){
+    elemento.innerHTML="<b>Passe o mouse aqui....</b>";
+};
+
+function carga(){
+   alert("Página carregada...")
+};
+
+function funcaoChange(elemento){
+   console.log(elemento.value);
+};
+/*
+// Desenvolva páginas web com JavaScript
+// Funções
+function soma(num1, num2){
+    return (num1 + num2);
+};
+
+alert(soma(10,20));
+*/
+
+/*
 // Terceira aula
 var data = new Date();
 alert(data);
 alert(data.getMonth()+1);
+*/
+
 /*
 for (var count=0; count<=5;count++){
    console.log(count);
